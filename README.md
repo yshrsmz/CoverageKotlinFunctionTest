@@ -10,4 +10,4 @@ I'm not sure what is the expected behavior, but generating `jacoco.exec` in `app
 
 [this testcase](https://github.com/yshrsmz/CoverageKotlinFunctionTest/blob/d2f6e3cb84ae0929f418b36582afcf6122d033df/app/src/test/java/net/yslibrary/coveragekotlinfunctiontest/ExampleUnitTest.kt#L22) is the cause of unexpected `app/jacoco.exec`
 
-To reproduce, just run `./gradlew testDebugUnitTest`
+To reproduce, just run `./gradlew clean testDebugUnitTest`
