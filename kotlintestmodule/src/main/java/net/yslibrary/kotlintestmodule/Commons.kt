@@ -1,6 +1,7 @@
 package net.yslibrary.kotlintestmodule
 
 import android.app.Activity
+import android.content.Context
 import android.widget.Toast
 
 /**
@@ -12,4 +13,9 @@ fun test(): String {
 
 fun Activity.toast(text: String) {
     Toast.makeText(this, text, Toast.LENGTH_SHORT).show()
+}
+
+
+fun Context.test(): String {
+    return "$this"
 }

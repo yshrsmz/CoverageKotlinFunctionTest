@@ -2,7 +2,8 @@ package net.yslibrary.kotlintestmodule;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static net.yslibrary.kotlintestmodule.CommonsKt.test;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Example local unit test, which will execute on the development machine (host).
@@ -13,5 +14,10 @@ public class ExampleUnitTest {
     @Test
     public void addition_isCorrect() throws Exception {
         assertEquals(4, 2 + 2);
+    }
+
+    @Test
+    public void commonstest() {
+        assertEquals(test(), "test function");
     }
 }
